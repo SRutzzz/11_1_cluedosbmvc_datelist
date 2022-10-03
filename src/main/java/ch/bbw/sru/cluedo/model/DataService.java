@@ -1,9 +1,12 @@
-package ch.bbw.sru.cluedo.dataModel;
+package ch.bbw.sru.cluedo.model;
+
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@Service
 public class DataService {
 
     private List<Person> personList = new ArrayList<>(

@@ -1,4 +1,4 @@
-package ch.bbw.sru.cluedo.dataModel;
+package ch.bbw.sru.cluedo.model;
 
 public class Person {
 

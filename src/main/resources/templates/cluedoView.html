@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cluedo</title>
+    <link rel="stylesheet" href="css/mvp.css">
+</head>
+<body>
+<header>
+    <h1>Persons</h1>
+</header>
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>F.O.A</th>
+        <th>Age</th>
+        <th>Hair color</th>
+        <th>Clothing color</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr th:each="person : ${personList}">
+           <td th:text="${person.name}"></td>
+           <td th:text="${person.formOfAdress}"></td>
+           <td th:text="${person.age}"></td>
+           <td th:text="${person.hairColor}"></td>
+           <td th:text="${person.clothingColor}"></td>
+        </tr>
+    </tbody>
+</table>
+</body>
